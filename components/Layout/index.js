@@ -2,17 +2,21 @@ import React from 'react'
 import Footer from '../Footer'
 import Header from '../header'
 
+const Layout = ({ children }) => {
 
-const Layout = ({children}) => {
-    return (
-    <div>
-       <Header />
-       <div className='container mx-auto'>
-          {children}
-       </div>
-       <Footer />
-    </div>  
-    )
+   return (
+      <div className=''>
+         <div className='' >
+            <Header />
+            <div className=''>
+
+               {children}
+            </div>
+         </div>
+         <Footer />
+
+      </div>
+   )
 }
 
 export default Layout
